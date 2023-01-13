@@ -12,7 +12,7 @@ namespace BasicProgram
     class Calculator
     {
         //instance variables
-        public int first, second, sum;
+        public int first, second, sum, sub;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Calculator"/> class.
@@ -32,6 +32,11 @@ namespace BasicProgram
         {
             sum = first + second;
             Console.WriteLine("Sum:" + sum);
+        }
+        public void Substraction()
+        {
+            sub = Math.Abs(first - second); //10-30=-20  (Math.Abs is used for positive value)
+            Console.WriteLine("diff:" + sub);
         }
     }
 }
